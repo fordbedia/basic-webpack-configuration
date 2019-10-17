@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/assets/scss/index.scss"],"names":[],"mappings":"AAAA;AACA;AACA,cAAc","file":"main.css","sourcesContent":["h1 {\n  font-size: 50px;\n  color: #333; }\n"],"sourceRoot":""}
