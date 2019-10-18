@@ -93,7 +93,7 @@ module.exports = {
 }
 ```
 
-We'll be needing this packages for advance setup.
+We'll be needing this packages to add more gears in our development app.
 
 - `mini-css-extract-plugin` to extract css into a separate files.
 - `uglifyjs-webpack-plugin` to minify JavaScript.
@@ -289,7 +289,7 @@ export default () => {
 - App.js
 </pre>
 
-Next import the enrty point for webpack ./src/index.js:
+Next import the enrty point for webpack `./src/index.js`:
 
 ```javascript
 import App from './App.js'

@@ -1,6 +1,6 @@
 ## Lazy Loading
 
-Let's assume you have configured the basic webpack configuration as explained from [Basic Wepback Configuration Guide](/README.md#basic)
+Let's assume you have configured the basic webpack configuration as explained from [Basic Wepback Configuration Guide](https://github.com/fordbedia/basic-webpack-configuration#basic-wepback-configuration-guide)
 
 - `@babel/plugin-syntax-dynamic-import` for lazy loading
 

@@ -1,4 +1,4 @@
-Let's assume you have configured the [Setup and Installation](/README.md) and [Basic Wepback Configuration](/README.md#basic) as explained from
+Let's assume you have configured the [Setup and Installation](https://github.com/fordbedia/basic-webpack-configuration#setup-and-installation) and [Basic Wepback Configuration](https://github.com/fordbedia/basic-webpack-configuration#basic-webpack-configuration) as explained from
 
 Let's install `-D vue-loader` and `vue-template-compiler`
 
