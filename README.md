@@ -222,7 +222,7 @@ Now if you check again, the file `./build/main.css` is minified.
 
 ### Time to REACT
 
-<img src="https://github.com/fordbedia/basic-webpack-configuration/blob/master/images/react.jpg" alt="drawing" width="200"/>
+<img src="https://github.com/fordbedia/basic-webpack-configuration/blob/master/images/react.jpg" alt="drawing" width="400"/>
 
 Back in our `src` directory. Let's add a mother component called `./src/App.js`. Inside the `App.js`:
 
