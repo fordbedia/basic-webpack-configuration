@@ -2,13 +2,19 @@
 
 ### Setup and Installation:
 
-Assuming you’re in your ~/document_root/my_project directory:
+Assuming you’re in your `~/document_root/my_project directory`:
 
-`npm init -y`
+```
+npm init -y
+```
+
 This will create a `package.json` file with the default attributes.
 
 Next up, install webpack and webpack cli:
-`npm i webpack webpack-cli --save-dev`
+
+```
+npm i webpack webpack-cli --save-dev
+```
 
 Now let's open `package.json` and configure the scripts. This will be the commands to tell webpack to compile our scripts.
 
@@ -168,7 +174,7 @@ You may want to add a notification https://github.com/fordbedia/webpack-notify-p
 npm i webpack-notify-plugin --save-dev
 ```
 
-Then you can simply amend the notify plugin to your `webpack.config.js`
+Then you can simply amend the notification plugin to your `webpack.config.js`
 
 ```javascript
 module.exports = {
