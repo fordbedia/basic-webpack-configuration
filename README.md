@@ -220,9 +220,9 @@ npm run build
 
 Now if you check again, the file `./build/main.css` is minified.
 
-![React](https://github.com/fordbedia/basic-webpack-configuration/blob/master/images/react.png)
-
 ### Time to REACT
+
+![React](https://github.com/fordbedia/basic-webpack-configuration/blob/master/images/react.jpg =250x)
 
 Back in our `src` directory. Let's add a mother component called `./src/App.js`. Inside the `App.js`:
 
