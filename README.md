@@ -220,7 +220,7 @@ npm run build
 
 Now if you check again, the file `./build/main.css` is minified.
 
-![React](https://github.com/fordbedia/basic-webpack-configuration/images/react.png)
+![React](https://github.com/fordbedia/basic-webpack-configuration/blob/master/images/react.png)
 
 ### Time to REACT
 
