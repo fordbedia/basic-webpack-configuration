@@ -45,7 +45,7 @@ Configure Babel by creating a new file named `.babelrc` inside the project folde
 }
 ```
 
-And finally create a new file named `webpack.config.js` for configuring babel-loader:
+And finally create a new file named `webpack.config.js` in your root directory for configuring babel-loader:
 
 ```javascript
 module.exports = {
@@ -105,7 +105,7 @@ Let's install it:
 npm install mini-css-extract-plugin uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin --save-dev
 ```
 
-### [Basic Webpack Configuration:](#basic)
+### [Basic Webpack Configuration:](#basic) `webpack.config.js`
 
 ```javascript
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -162,7 +162,34 @@ module.exports = {
 }
 ```
 
-Back in your `index.js`, let's add scss file `./src/assets/scss/index.scss`
+You may want to add a notification https://github.com/fordbedia/webpack-notify-plugin whenever you made changes to your codes. This will tell if you have errors or not.
+
+```
+npm i webpack-notify-plugin --save-dev
+```
+
+Then you can simply amend the notify plugin to your `webpack.config.js`
+
+```javascript
+module.exports = {
+  plugins: [
+    new Notifier({
+      title: 'Webpack Notify Plugin',
+      message: "Great we're good to go!",
+      icon: 'https://www.goidp.com/wp-content/uploads/wordpress-1.png'
+    })
+
+    // More plugins below
+  ],
+  module: {
+    rules: [
+      // Rules here...
+    }
+  }
+}
+```
+
+Okay now back in your `index.js`, let's add scss file `./src/assets/scss/index.scss`
 
 ```scss
 h1 {
@@ -177,7 +204,7 @@ and import it to our entry point `./src/index.js`.
 import Style from './assets/scss/index.scss'
 ```
 
-Ok we're now set on our basic config for css/sass. Let's try running it:
+Ok we're now set on our basic configuration for css/sass. Let's try running it:
 
 ```
 npm run dev
@@ -191,7 +218,9 @@ Let's try the production:
 npm run build
 ```
 
-Now if you check again the file `./build/main.css` it's minified.
+Now if you check again, the file `./build/main.css` is minified.
+
+![React](https://github.com/fordbedia/basic-webpack-configuration/images/react.png)
 
 ### Time to REACT
 
