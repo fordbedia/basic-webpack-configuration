@@ -18,13 +18,13 @@ npm i webpack webpack-cli --save-dev
 
 Now let's open `package.json` and configure the scripts. This will be the commands to tell webpack to compile our scripts.
 
-Let's create `src` directory and inside, create a file called `index.js`
-
 ```json
   "dev": "webpack --mode development ./src/index.js --output ./build/main.js",
   "build": "webpack --mode production ./src/index.js --output ./build/main.js",
   "watch": "webpack --watch --mode development ./src/index.js --output ./build/main.js"
 ```
+
+Let's create `src` directory and inside, create a file called `index.js`
 
 Next, we're gonna need `babel`. `babel` is a JavaScript compiler that helps us transform our codes to es5. For more information about babel, please refer to [https://babeljs.io/docs/en/](https://babeljs.io/docs/en/).
 
