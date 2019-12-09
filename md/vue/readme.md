@@ -1,4 +1,4 @@
-Let's assume you have configured the [Setup and Installation](https://github.com/fordbedia/basic-webpack-configuration#setup-and-installation) and [Basic Wepback Configuration](https://github.com/fordbedia/basic-webpack-configuration#basic) as explained from
+Let's assume you have configured the [Setup and Installation](https://github.com/fordbedia/basic-webpack-configuration#setup-and-installation) and [Basic Wepback Configuration](https://github.com/fordbedia/basic-webpack-configuration#basic)
 
 Let's install `vue-loader` and `vue-template-compiler`
 
@@ -8,7 +8,7 @@ npm install vue vue-loader vue-template-compiler vue-router --save-dev
 
 Now let's edit our webpack configuration `webpack.config.js` and amend the vue loader.
 
-_Note: make sure to include the vue loader plugin plugin_
+_Note: make sure to include the vue loader plugin_
 
 ```javascript
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
