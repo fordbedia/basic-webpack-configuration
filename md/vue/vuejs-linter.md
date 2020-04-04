@@ -72,6 +72,28 @@ module: {
 }
 ```
 
+Or in your Laravel `webpack.mix.js` add the following:
+
+```javascript
+mix.webpackConfig({
+	module: {
+		rules: [{
+			enforce: 'pre',
+			test: /\.(js|vue)$/,
+			exclude: /node_modules/,
+			loader: 'eslint-loader',
+			// options: {
+			// 	formatter: require('eslint-friendly-formatter')
+			// }
+		}]
+  },
+  output: {
+    chunkFilename: 'js/bundlers/[name].bundle.js',
+    publicPath: '/',
+  }
+});
+```
+
 Now run compile to check some errors.
 
 ```
