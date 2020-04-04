@@ -1,6 +1,6 @@
 ## Vuejs ESLinter
 
-First we need to installed these required packages for eslint.
+First we need to install these required packages for eslint.
 
 - babel-eslint
 - eslint
