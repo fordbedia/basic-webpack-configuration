@@ -31,3 +31,9 @@ new Vue({
   router,
   components: { App }
 }).$mount('#app')
+
+
+// new Vue({
+//   el: '#app',
+//   router
+// })

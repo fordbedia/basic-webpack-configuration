@@ -75,7 +75,7 @@ To install `sass-loader` `css-loader` it is important to install `node-sass` as 
 
 Now let's install it.
 
-`npm install sass-loader node-sass css-loader --save-dev`
+`npm install sass-loader node-sass css-loader file-loader --save-dev`
 
 Back in your `webpack.config.js`, edit the configuration:
 
@@ -93,6 +93,18 @@ module.exports = {
       {
         test: /\.(c|sc)ss$/i,
         use: ['css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
       }
     ]
   }
@@ -161,6 +173,18 @@ module.exports = {
           },
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
         ]
       }
     ]
